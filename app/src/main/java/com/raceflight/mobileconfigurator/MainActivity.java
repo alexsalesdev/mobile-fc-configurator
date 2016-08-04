@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void betaflightMode() {
-        pidsTuning = new String[] { "p_pitch", "i_pitch", "d_pitch", "p_roll", "i_roll", "d_roll", "p_yaw", "i_yaw", "d_yaw","pid_controller", "gyro_lowpass", "gyro_lpf", "yaw_p_limit", "dterm_lowpass", "yaw_lowpass"};
+        pidsTuning = new String[] {  "p_pitch", "i_pitch", "d_pitch", "p_roll", "i_roll", "d_roll", "p_yaw", "i_yaw", "d_yaw","pid_controller", "pid_delta_method", "gyro_lowpass", "gyro_lpf", "yaw_p_limit", "dterm_lowpass", "dterm_lowpass_level", "dterm_notch_hz", "dterm_notch_cutoff", "yaw_lowpass" , "gyro_lowpass_level", "gyro_notch_hz", "gyro_notch_cutoff"};
         ratesTuning = new String[] {"rc_rate", "rc_rate_yaw", "rc_expo", "rc_yaw_expo", "thr_mid", "thr_expo", "roll_rate", "pitch_rate", "yaw_rate", "tpa_rate", "tpa_breakpoint"};
         configTuning = new String[] {"gyro_sync_denom", "pid_process_denom", "acc_hardware",  "baro_hardware", "mag_hardware", "use_unsynced_pwm", "motor_pwm_protocol", "yaw_jump_prevention",
-                "motor_pwm_rate", "min_command", "min_throttle", "max_throttle", "rc_smooth_interval_ms", "roll_yaw_cam_mix_degrees", "max_check", "min_check", "mid_rc"};
+                "motor_pwm_rate","vbat_pid_compensation", "zero_throttle_stabilisation", "pid_tolerance_band", "tolerance_band_reduction", "zero_cross_allowance", "iterm_throttle_gain", "pterm_setpoint_weight", "dterm_setpoint_weight", "max_yaw_acceleration", "iterm_ignore_threshold", "yaw_iterm_ignore_threshold",  "min_command", "min_throttle", "max_throttle", "rc_smoothing",  "rc_smooth_interval_ms", "roll_yaw_cam_mix_degrees", "max_check", "min_check", "mid_rc"};
 
     }
 
