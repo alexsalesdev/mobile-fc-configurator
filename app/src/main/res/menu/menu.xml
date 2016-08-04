@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.toolbar.MainActivity" >
+
+    <item android:id="@+id/action_connect"
+        android:title="Connect"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"/>
+
+    <item android:id="@+id/betaflight"
+        android:title="Betaflight"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/raceflight"
+        android:title="Raceflight"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        />
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="com.raceflight.mobileconfigurator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical"
+        android:weightSum="100">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            android:layout_weight="10"
+            >
+        </android.support.v7.widget.Toolbar>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="55" android:orientation="vertical" android:weightSum="100">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="85"
+                android:id="@+id/historyView"
+                >
+                <TextView
+                    android:id="@+id/historybox"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:background="#000"
+                    android:minHeight="450dp"
+                    android:layout_height="match_parent"  />
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                >
+                <EditText
+                    android:id="@+id/command"
+                    android:text=""
+                    android:hint="Command here"
+                    android:lines="1"
+                    android:layout_weight="70"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/submit"
+                    android:text="Submit"
+                    android:layout_weight="20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/clear"
+                    android:text="X"
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:orientation="vertical" android:layout_weight="35">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:weightSum="3">
+                <Button
+                    android:id="@+id/pids_tuning"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:text="PIDS" />
+                <Button
+                    android:id="@+id/rates_tuning"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:text="RATES" />
+                <Button
+                    android:id="@+id/config_tuning"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:text="CONFIG" />
+            </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/config_menu"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    
+</LinearLayout>
