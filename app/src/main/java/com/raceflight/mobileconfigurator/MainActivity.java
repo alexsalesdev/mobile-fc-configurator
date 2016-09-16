@@ -136,6 +136,8 @@ public class MainActivity extends AppCompatActivity {
             app.commMW.Connect("", app.SerialPortBaudRateMW);
             Toast.makeText(getApplicationContext(), "App connected: " + app.commMW.Connected, Toast.LENGTH_LONG).show();
             return true;
+        } else if (id == R.id.action_save) {
+            app.commMW.Write("save".getBytes());
         } else if (id == R.id.raceflight) {
             Toast.makeText(getApplicationContext(), "Raceflight mode", Toast.LENGTH_SHORT).show();
             raceflightMode();

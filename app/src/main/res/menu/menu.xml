@@ -9,6 +9,13 @@
         android:orderInCategory="1"
         android:menuCategory="secondary"/>
 
+
+    <item android:id="@+id/action_save"
+        android:title="Save"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:menuCategory="secondary"/>
+
     <item android:id="@+id/betaflight"
         android:title="Betaflight"
         android:orderInCategory="2"
