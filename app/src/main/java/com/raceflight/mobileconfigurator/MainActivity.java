@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     //betaflight
 
     private void raceflightMode() {
-        pidsTuning = new String[] {"fpkp", "fpki", "fpkd", "frkp", "frki", "frkd", "fykp", "fyki", "fykd", "wpgyrolpf", "wrgyrolpf", "wygyrolpf", "wpkdlpf", "wrkdlpf", "wykdlpf", "witchcraft"};
+        pidsTuning = new String[] {"fpkp", "fpki", "fpkd", "frkp", "frki", "frkd", "fykp", "fyki", "fykd", "wpgyrolpf", "wrgyrolpf", "wygyrolpf", "wpkdlpf", "wrkdlpf", "wykdlpf", "witchcraft", "fcrap", "fcquick", "fcpress", "wypcut"};
         ratesTuning = new String[] {"fpexpo", "frexpo", "fyexpo", "ftmid", "ftexpo", "frrate", "fprate", "fyrate", "ctrarate", "wtpabreak", "fpacrop", "fracrop", "fyacrop"};
         configTuning = new String[] {"acc_hardware", "baro_hardware", "mag_hardware", "rf_loop_ctrl", "yaw_jump_prevention", "motor_pwm_rate", "min_command", "min_throttle", "max_throttle", "rc_smoothing", "roll_yaw_cam_mix_degrees", "max_check", "min_check", "mid_rc"};
     }
